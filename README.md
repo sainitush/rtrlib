@@ -3,8 +3,9 @@ Introduction
 The RTRlib implements the client-side of the RPKI-RTR protocol 
 ([RFC 6810](https://tools.ietf.org/html/rfc6810)), 
 ([RFC 8210](https://tools.ietf.org/html/rfc8210)) and BGP Prefix Origin
-Validation ([RFC 6811](https://tools.ietf.org/html/rfc6811)). This also enables
-the maintenance of router keys. Router keys are required to deploy BGPSEC.
+Validation ([RFC 6811](https://tools.ietf.org/html/rfc6811)). 
+This also enables the maintenance of router keys. 
+Router keys are required to deploy BGPSEC.
 
 The software was successfully tested on Linux and FreeBSD.
 
@@ -20,7 +21,7 @@ To build the RTRlib, the CMake build system must be installed.
 To establish an SSH connection between RTR-Client and RTR-Server, the
 libssh 0.6.x or higher library must also be installed.
 
-cmocka (optional) is required for unit tests
+cmocka (optional) is required for unit tests.
 Doxygen (optional) is required to create the HTML documentation.
 
 
@@ -57,7 +58,7 @@ Compilation
 
       -D CMAKE_INSTALL_PREFIX=<path>
 
-* Build library, tests, and tools
+* Build library, tests, and tools:
 
       make
 
@@ -76,12 +77,12 @@ pass the following parameter to gcc:
 
     -lrtr
 
-In case an error such as
+In case an error such as:
 
     -/usr/bin/ld: cannot find -lrtr
     -collect2: error: ld returned 1 exit status
 
-occurs, the location of the library can be passed explicitly as a parameter
+occurs, the location of the library can be passed explicitly as a parameter,
 
     -L<path_to_librtr.so>
 
@@ -114,12 +115,12 @@ LACNIC, RIPE.
 
 Directories
 -----------
-* cmake/      - CMake modules
+* cmake/      - CMake modules.
 * doxygen/    - Example code and graphics used in the Doxygen
-                documentation
-* rtrlib/     - Header and source code files of the RTRlib
-* tests/      - Unit tests
-* tools/      - Contains the rtrclient
+                documentation.
+* rtrlib/     - Header and source code files of the RTRlib.
+* tests/      - Unit tests.
+* tools/      - Contains the rtrclient.
 
 
 Contact
